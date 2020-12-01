@@ -5,8 +5,7 @@ import HomeTopTab from '../navigation/HomeTopTab'
 
 const Home = ({ navigation }) => {
     return (
-          <HomeTopTab /> 
-          
+          <HomeTopTab />    
     )
 }
 

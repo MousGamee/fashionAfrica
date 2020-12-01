@@ -6,17 +6,17 @@ import Favoris from '../screens/Favoris'
 import Search from '../screens/Search'
 import Ionicons from 'react-native-vector-icons/Ionicons'
 
-
 const Tab = createStackNavigator()
 
-const HomeStack = navigation => {
-
+const HomeStack = ({ navigation }) => {
     return (
         <Tab.Navigator       
         >
             <Tab.Screen name="Home" component={Home}  options={{
                 headerLeft : () => (
-                    <Ionicons name="ios-menu" size={25} style={{marginLeft : 20}}/> 
+                    <Ionicons 
+                    onPress={() => navigation.openDrawer()}
+                    name="ios-menu" size={25} style={{marginLeft : 20}}/> 
                 ),
                 headerRight : () => (
                     <View style={{flexDirection : 'row', marginRight : 20}}>

@@ -6,9 +6,11 @@ import {
     ScrollView,
     Dimensions, 
     ImageBackground,
-    TouchableOpacity
+    TouchableOpacity,
+    Image
 } from 'react-native'
 const WIDTH = Dimensions.get('window').width
+
 const Acceuil = () => {
     return (
         <ScrollView style={{flex : 1, backgroundColor : 'white', paddingHorizontal : 10, width : WIDTH, marginTop : 10}}>
@@ -50,6 +52,70 @@ const Acceuil = () => {
                        <Text style={{fontWeight : "bold", fontSize : 30, color : 'white'}}>neutres</Text> 
                     </View>
                     
+                </ImageBackground>
+            </TouchableOpacity>
+
+            <View style={{flexDirection : 'row', justifyContent : "space-between"}}>
+                <TouchableOpacity style={{width : '48%'}}>
+                    <View style={{width : '100%', height : 200}}>
+                        <Image
+                        style={{width : null, height : null, resizeMode : "cover", flex : 1}}
+                        source={require('../assets/kaymina.jpg')} />
+                    </View>
+                    <View style={{alignItems : "center", marginTop : 10}}>
+                        <Text style={{fontWeight : 'bold', fontSize : 17}}>KayMina</Text>
+                        <Text style={{color : 'lightgrey', textAlign : "center", fontSize : 15}}>Robe de soire sur mesure </Text>
+                    </View>
+                    
+                </TouchableOpacity>
+                <TouchableOpacity style={{width : '48%'}}>
+                    <View style={{width : '100%', height : 200}}>
+                        <Image
+                        style={{width : null, height : null, resizeMode : "cover", flex : 1}}
+                        source={require('../assets/afromag.jpg')} />
+                    </View>
+                    <View style={{alignItems : "center", marginTop : 10}}>
+                        <Text style={{fontWeight : 'bold', fontSize : 17}}>Afro Mag</Text>
+                        <Text style={{color : 'lightgrey', textAlign : "center", fontSize : 15}}>Chemise sur mesure </Text>
+                    </View>                   
+                </TouchableOpacity>
+            </View>
+
+            <View style={{flexDirection : 'row', justifyContent : "space-between", marginTop : 25}}>
+                <TouchableOpacity style={{width : '48%'}}>
+                    <View style={{width : '100%', height : 200}}>
+                        <Image
+                        style={{width : null, height : null, resizeMode : "cover", flex : 1}}
+                        source={require('../assets/kaymina.jpg')} />
+                    </View>
+                    <View style={{alignItems : "center", marginTop : 10}}>
+                        <Text style={{fontWeight : 'bold', fontSize : 17}}>KayMina</Text>
+                        <Text style={{color : 'lightgrey', fontSize : 15}}>Wax, Basin, </Text>
+                    </View>
+                    
+                </TouchableOpacity>
+                <TouchableOpacity style={{width : '48%'}}>
+                    <View style={{width : '100%', height : 200}}>
+                        <Image
+                        style={{width : null, height : null, resizeMode : "cover", flex : 1}}
+                        source={require('../assets/kaymina.jpg')} />
+                    </View>
+                    <View style={{alignItems : "center", marginTop : 10}}>
+                        <Text style={{fontWeight : 'bold', fontSize : 17}}>KayMina</Text>
+                        <Text style={{color : 'lightgrey', textAlign : "center", fontSize : 15}}>Wax, Basin, </Text>
+                    </View>                   
+                </TouchableOpacity>
+            </View>
+            
+            <TouchableOpacity style={styles.bigContainer}>
+                <ImageBackground 
+                style={{width : '100%', height : '100%', flex : 1}}
+                source={require('../assets/banner3.jpg')}>
+                    <View style={{justifyContent : "center", alignItems : "center", marginTop : 45}}>
+                       <Text style={{fontWeight : "bold", fontSize : 35, color : 'white'}}>Place</Text> 
+                       <Text style={{fontWeight : "bold", fontSize : 30, color : 'white'}}>aux tons</Text> 
+                       <Text style={{fontWeight : "bold", fontSize : 30, color : 'white'}}>neutres</Text> 
+                    </View>           
                 </ImageBackground>
             </TouchableOpacity>
 
