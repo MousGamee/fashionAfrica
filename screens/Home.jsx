@@ -1,14 +1,12 @@
 import React from 'react'
-import { View, Text } from 'react-native'
+import { View, Text, TouchableOpacity } from 'react-native'
 import HomeDrawerNav from '../navigation/HomeDrawerNav'
+import HomeTopTab from '../navigation/HomeTopTab'
 
-const Home = () => {
+const Home = ({ navigation }) => {
     return (
-        <>
-           <View>
-               <Text> du text </Text>
-           </View>
-        </>
+          <HomeTopTab /> 
+          
     )
 }
 
